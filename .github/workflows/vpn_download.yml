@@ -35,8 +35,8 @@ jobs:
         git config --global user.name "GitHub Action Bot"
         git config --global user.email "action@github.com"
         
-        if [ -f "ProtonVPN_WireGuard_Configs.zip" ]; then
-          git add ProtonVPN_WireGuard_Configs.zip downloaded_wg_ids.json
+        if [ -f "ProtonVPN_WireGuard_Configs_New.zip" ]; then
+          git add ProtonVPN_WireGuard_Configs_New.zip downloaded_wg_ids.json
           
           git commit -m "🔄 Update WireGuard Configs [$(date)]" || echo "No changes to commit"
           
