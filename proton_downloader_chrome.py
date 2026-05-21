@@ -209,7 +209,7 @@ class ProtonVPN:
         total_files = sum(len(v) for v in wg_files.values())
         print(f"Preparing Zip: {total_files} files across {len(wg_files)} countries.")
         
-        zip_filename = "ProtonVPN_WireGuard_Configs.zip"
+        zip_filename = "ProtonVPN_WireGuard_Configs_New.zip"
         zip_path = os.path.join(os.getcwd(), zip_filename)
 
         with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
